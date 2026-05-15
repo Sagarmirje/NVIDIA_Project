@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0d1117;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 60px;
+    color: #c9d1d9;
+  }
+  .wrap {
+    width: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #8b949e;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  /* ── boxes ── */
+  .block {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid;
+    padding: 16px 24px;
+    position: relative;
+  }
+  .block .tag {
+    position: absolute;
+    top: -13px; right: 18px;
+    font-size: 11px; font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    border: 2px solid #0d1117;
+    white-space: nowrap;
+  }
+  .block .bname {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .block .bsub {
+    font-size: 12.5px;
+    font-family: Consolas, monospace;
+    color: #8b949e;
+    line-height: 1.6;
+  }
+  .block .bdim {
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Consolas, monospace;
+  }
+
+  /* colours */
+  .c-blue   { border-color:#58a6ff; background:#12192b; }
+  .c-blue   .tag { background:#58a6ff; color:#0d1117; }
+  .c-blue   .bdim { color:#58a6ff; }
+
+  .c-grey   { border-color:#484f58; background:#161b22; border-style: dashed; opacity:.85; }
+  .c-grey   .tag { background:#484f58; color:#c9d1d9; }
+  .c-grey   .bdim { color:#8b949e; }
+
+  .c-purple { border-color:#d2a8ff; background:#1d1530; }
+  .c-purple .tag { background:#d2a8ff; color:#0d1117; }
+  .c-purple .bdim { color:#d2a8ff; }
+
+  .c-teal   { border-color:#39d353; background:#0f1f14; }
+  .c-teal   .tag { background:#39d353; color:#0d1117; }
+  .c-teal   .bdim { color:#39d353; }
+
+  .c-orange { border-color:#f0883e; background:#201610; }
+  .c-orange .tag { background:#f0883e; color:#0d1117; }
+  .c-orange .bdim { color:#f0883e; }
+
+  /* frozen group */
+  .group-label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0 8px;
+  }
+  .group-label .gl-text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .group-label .gl-line {
+    flex: 1;
+    height: 1px;
+    background: #30363d;
+  }
+  .frozen-lbl  { color: #ff7b72; }
+  .unfrz-lbl   { color: #a5d6ff; }
+
+  /* arrow */
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 2px 0;
+  }
+  .arrow .shaft {
+    width: 3px; height: 28px;
+    background: #30363d;
+  }
+  .arrow .head {
+    width: 0; height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #30363d;
+  }
+  .arrow .label {
+    font-size: 11px;
+    font-family: Consolas, monospace;
+    color: #58a6ff;
+    margin-top: 2px;
+  }
+
+  /* tsm badge */
+  .tsm {
+    display: inline-block;
+    background: #ff7b72;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: .5px;
+  }
+  .tsm-unfrz {
+    background: #a5d6ff;
+    color: #0d1117;
+  }
+
+  /* grid for frozen blocks */
+  .grid2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>MobileNetV3-Large + TSM Backbone</h1>
+  <p class="subtitle">End-to-End Selective Fine-Tuning Architecture · VQA Pipeline · Stage 3</p>
+
+  <!-- INPUT -->
+  <div class="block c-blue">
+    <div class="tag">📥 VIDEO INPUT</div>
+    <div class="bname">Raw Video Tensor</div>
+    <div class="bsub">8 uniformly sampled frames per video<br>ImageNet Normalised · Resized to 224 × 224</div>
+    <div class="bdim">Shape: [B, T, C, H, W] = [6, 8, 3, 224, 224]<br>Folded into backbone as [B×T, C, H, W] = [48, 3, 224, 224]</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <!-- STEM -->
+  <div class="group-label">
+    <span class="gl-line"></span>
+    <span class="gl-text frozen-lbl">🔒 FROZEN — ImageNet Pre-trained Weights (1,221,712 params)</span>
+    <span class="gl-line"></span>
+  </div>
+
+  <div class="block c-grey">
+    <div class="tag">BLOCK [0] — Stem</div>
+    <div class="bname">Conv2dNormActivation  <span class="tsm">TSM</span></div>
+    <div class="bsub">Conv2d(3→16, k=3, stride=2) → BN → Hardswish<br>Spatial Downsampling: 224×224 → 112×112</div>
+    <div class="bdim">Output: [48, 16, 112, 112]  |  requires_grad = False</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <!-- FROZEN INVERTED RESIDUALS grid -->
+  <div class="grid2">
+    <div class="block c-grey">
+      <div class="tag">BLOCKS [1–4]</div>
+      <div class="bname">InvertedResidual (SE)  <span class="tsm">TSM</span></div>
+      <div class="bsub">Squeeze-and-Excitation modules<br>Channels: 16→24→40→40<br>Stride 1&2 — spatial: 112→56→28</div>
+      <div class="bdim">requires_grad = False</div>
+    </div>
+    <div class="block c-grey">
+      <div class="tag">BLOCKS [5–10]</div>
+      <div class="bname">InvertedResidual (SE)  <span class="tsm">TSM</span></div>
+      <div class="bsub">Squeeze-and-Excitation modules<br>Channels: 40→80→80→112→112<br>Spatial: 28×28 → 14×14</div>
+      <div class="bdim">requires_grad = False</div>
+    </div>
+    <div class="block c-grey">
+      <div class="tag">BLOCKS [11–13]</div>
+      <div class="bname">InvertedResidual (SE)  <span class="tsm">TSM</span></div>
+      <div class="bsub">Channels: 112→160→160<br>Spatial: 14×14 → 7×7<br>Hardswish activations</div>
+      <div class="bdim">requires_grad = False</div>
+    </div>
+    <div class="block c-grey">
+      <div class="tag">BLOCKS [14–13]</div>
+      <div class="bname">Summary: Frozen Layers</div>
+      <div class="bsub">Total frozen blocks: 1 Stem + 13 InvRes<br>These preserve fundamental ImageNet<br>edge / texture / shape detectors</div>
+      <div class="bdim">Frozen params: 1,221,712</div>
+    </div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <!-- UNFROZEN -->
+  <div class="group-label">
+    <span class="gl-line"></span>
+    <span class="gl-text unfrz-lbl">🔥 UNFROZEN — Fine-tuning at lr = 1e-5 (3,967,849 params)</span>
+    <span class="gl-line"></span>
+  </div>
+
+  <div class="block c-purple">
+    <div class="tag">BLOCKS [14–15] — Unfrozen</div>
+    <div class="bname">Deep InvertedResidual Blocks  <span class="tsm tsm-unfrz">TSM · ACTIVE</span></div>
+    <div class="bsub">Last 2 InvertedResidual blocks with Squeeze-and-Excitation<br>
+    Channels: 160 → 160  |  Spatial: 7×7<br>
+    Gradients flow backward here — filters mutate to detect AI artifacts<br>
+    (hallucinations · rendering glitches · physics violations)</div>
+    <div class="bdim">requires_grad = True  |  Equivalent of layer6.2 &amp; layer7.0 in MobileNetV2</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <div class="block c-purple">
+    <div class="tag">BLOCK [16] — Unfrozen</div>
+    <div class="bname">Final Conv2dNormActivation  <span class="tsm tsm-unfrz">TSM · ACTIVE</span></div>
+    <div class="bsub">Conv2d(160→960, k=1) → BN → Hardswish<br>
+    Expands channels from 160 to 960<br>
+    Equivalent of conv2 (final projection) in MobileNetV2</div>
+    <div class="bdim">Output: [48, 960, 7, 7]  |  requires_grad = True</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <!-- GAP -->
+  <div class="block c-teal">
+    <div class="tag">POOLING</div>
+    <div class="bname">Global Average Pooling (GAP)</div>
+    <div class="bsub">AdaptiveAvgPool2d((1,1)) — compresses 7×7 spatial map to a single value per channel<br>
+    Flatten: [48, 960, 1, 1] → [48, 960]<br>
+    Temporal un-fold: [48, 960] → [6, 8, 960] → mean(dim=1) → [6, 960]</div>
+    <div class="bdim">Output: [B, 960] = [6, 960]</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div></div>
+
+  <!-- PROJECTION -->
+  <div class="block c-purple">
+    <div class="tag">PROJECTION — Unfrozen</div>
+    <div class="bname">Dimension Projection: 960 → 1280</div>
+    <div class="bsub">Linear(960, 1280) → Hardswish<br>
+    Initialised from MobileNetV3's original classifier[0] pretrained weights<br>
+    Expands feature space to match MobileNetV2 output dim exactly (1280)</div>
+    <div class="bdim">Output: [B, 1280] = [6, 1280]  |  requires_grad = True</div>
+  </div>
+
+  <div class="arrow"><div class="shaft"></div><div class="head"></div>
+    <div class="label">→ Dual Trunk MLP (Stage 4)</div>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="block c-orange">
+    <div class="tag">🎯 BACKBONE OUTPUT</div>
+    <div class="bname">1280-Dimensional Feature Embedding</div>
+    <div class="bsub">Dense semantic vector summarising the entire video's spatial and temporal content<br>
+    Identical dim to MobileNetV2-TSM pipeline — MLP head unchanged</div>
+    <div class="bdim">Shape: [B, 1280] = [6, 1280]  |  Passed to Shared Projection Layer</div>
+  </div>
+
+</div>
+</body>
+</html>

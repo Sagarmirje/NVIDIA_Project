@@ -1,0 +1,22 @@
+{
+    "MOS Metrics": {
+        "mos_SRCC": 0.6633574564946164,
+        "mos_PLCC": 0.6658682227134705,
+        "mos_RMSE": 11.351144445588268
+    },
+    "Quality Classification": {
+        "qualityclass_accuracy": 0.588
+    },
+    "Per-flag F1 scores": {
+        "spatial_flag_f1": 0.4871550903901047,
+        "hallucination_flag_f1": 0.4924406047516199,
+        "lighting_flag_f1": 0.1488095238095238,
+        "rendering_flag_f1": 0.47628657921291623,
+        "physical_violation_flag_f1": 0.10606060606060606,
+        "motion_inconsistency_flag_f1": 0.21753246753246752,
+        "object_flicker_flag_f1": 0.392
+    },
+    "Overall": {
+        "macro_avg_flag_f1": 0.3314692673938912
+    }
+}

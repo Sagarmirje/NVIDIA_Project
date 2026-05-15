@@ -1,0 +1,1221 @@
+nohup: ignoring input
+Loading datasets...
+Train: 1166 batches | Val: 250 batches
+Config: Dropout=0.3 | Patience=20
+Total=5,189,561  Frozen=1,221,712  Trainable=3,967,849
+
+Starting Training (Dropout=0.3 | Patience=20)...
+
+
+[Epoch 1/50] LR_BB=1.00e-05 | LR_MLP=3.00e-04
+
+====================================================================
+EPOCH 1/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.4379     |     1.4187    
+mos_rmse                       |    15.6062     |    13.9063    
+mos_plcc                       |     0.2702     |     0.4212    
+mos_srcc                       |     0.2826     |     0.4060    
+quality_class_rmse             |     0.8756     |     0.8200    
+spatial_flag_f1                |     0.3758     |     0.3836    
+hallucination_flag_f1          |     0.3067     |     0.4613    
+lighting_flag_f1               |     0.0063     |     0.0000    
+rendering_flag_f1              |     0.3214     |     0.3572    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.0619     |     0.1667    
+motion_inconsistency_flag_f1   |     0.0024     |     0.0000    
+====================================================================
+*** New Best SRCC: 0.4060 — saving ***
+
+[Epoch 2/50] LR_BB=9.99e-06 | LR_MLP=3.00e-04
+
+====================================================================
+EPOCH 2/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3926     |     1.3856    
+mos_rmse                       |    13.4942     |    12.4137    
+mos_plcc                       |     0.4150     |     0.5523    
+mos_srcc                       |     0.4102     |     0.5372    
+quality_class_rmse             |     0.7742     |     0.7726    
+spatial_flag_f1                |     0.4843     |     0.4141    
+hallucination_flag_f1          |     0.4125     |     0.5245    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4119     |     0.3206    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.2152     |     0.1774    
+motion_inconsistency_flag_f1   |     0.0012     |     0.0000    
+====================================================================
+*** New Best SRCC: 0.5372 — saving ***
+
+[Epoch 3/50] LR_BB=9.96e-06 | LR_MLP=2.99e-04
+
+====================================================================
+EPOCH 3/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3730     |     1.3828    
+mos_rmse                       |    13.0563     |    12.7397    
+mos_plcc                       |     0.4544     |     0.5326    
+mos_srcc                       |     0.4445     |     0.5222    
+quality_class_rmse             |     0.7521     |     0.7627    
+spatial_flag_f1                |     0.5065     |     0.5530    
+hallucination_flag_f1          |     0.4501     |     0.4770    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4317     |     0.4795    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.2443     |     0.3093    
+motion_inconsistency_flag_f1   |     0.0012     |     0.0000    
+====================================================================
+No improvement 1/20. Best: 0.5372
+
+[Epoch 4/50] LR_BB=9.92e-06 | LR_MLP=2.97e-04
+
+====================================================================
+EPOCH 4/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3575     |     1.3875    
+mos_rmse                       |    12.8750     |    12.1599    
+mos_plcc                       |     0.4739     |     0.5658    
+mos_srcc                       |     0.4633     |     0.5537    
+quality_class_rmse             |     0.7392     |     0.7245    
+spatial_flag_f1                |     0.5299     |     0.5049    
+hallucination_flag_f1          |     0.4751     |     0.4907    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4505     |     0.4326    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.2860     |     0.2993    
+motion_inconsistency_flag_f1   |     0.0047     |     0.0000    
+====================================================================
+*** New Best SRCC: 0.5537 — saving ***
+
+[Epoch 5/50] LR_BB=9.86e-06 | LR_MLP=2.95e-04
+
+====================================================================
+EPOCH 5/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3435     |     1.4044    
+mos_rmse                       |    12.5746     |    12.1861    
+mos_plcc                       |     0.5033     |     0.5756    
+mos_srcc                       |     0.4942     |     0.5603    
+quality_class_rmse             |     0.7209     |     0.7233    
+spatial_flag_f1                |     0.5313     |     0.4730    
+hallucination_flag_f1          |     0.4854     |     0.4670    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4701     |     0.4518    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.2823     |     0.3576    
+motion_inconsistency_flag_f1   |     0.0024     |     0.0110    
+====================================================================
+*** New Best SRCC: 0.5603 — saving ***
+
+[Epoch 6/50] LR_BB=9.78e-06 | LR_MLP=2.93e-04
+
+====================================================================
+EPOCH 6/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3293     |     1.3948    
+mos_rmse                       |    12.4497     |    11.8211    
+mos_plcc                       |     0.5166     |     0.5932    
+mos_srcc                       |     0.5065     |     0.5812    
+quality_class_rmse             |     0.7134     |     0.6894    
+spatial_flag_f1                |     0.5446     |     0.5474    
+hallucination_flag_f1          |     0.4864     |     0.4157    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4929     |     0.4568    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.3018     |     0.3657    
+motion_inconsistency_flag_f1   |     0.0024     |     0.0055    
+====================================================================
+*** New Best SRCC: 0.5812 — saving ***
+
+[Epoch 7/50] LR_BB=9.68e-06 | LR_MLP=2.90e-04
+
+====================================================================
+EPOCH 7/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3143     |     1.3926    
+mos_rmse                       |    12.3076     |    12.1303    
+mos_plcc                       |     0.5304     |     0.5810    
+mos_srcc                       |     0.5265     |     0.5738    
+quality_class_rmse             |     0.7027     |     0.7113    
+spatial_flag_f1                |     0.5748     |     0.5274    
+hallucination_flag_f1          |     0.5001     |     0.5039    
+lighting_flag_f1               |     0.0000     |     0.0000    
+rendering_flag_f1              |     0.4987     |     0.4671    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.3470     |     0.2366    
+motion_inconsistency_flag_f1   |     0.0024     |     0.0055    
+====================================================================
+No improvement 1/20. Best: 0.5812
+
+[Epoch 8/50] LR_BB=9.57e-06 | LR_MLP=2.86e-04
+
+====================================================================
+EPOCH 8/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.3051     |     1.4131    
+mos_rmse                       |    12.1667     |    11.6952    
+mos_plcc                       |     0.5453     |     0.5966    
+mos_srcc                       |     0.5364     |     0.5886    
+quality_class_rmse             |     0.6922     |     0.6822    
+spatial_flag_f1                |     0.5697     |     0.5212    
+hallucination_flag_f1          |     0.5195     |     0.4852    
+lighting_flag_f1               |     0.0043     |     0.0000    
+rendering_flag_f1              |     0.5138     |     0.3944    
+physics_violation_flag_f1      |     0.0000     |     0.0000    
+object_flicker_flag_f1         |     0.3335     |     0.3144    
+motion_inconsistency_flag_f1   |     0.0070     |     0.0163    
+====================================================================
+*** New Best SRCC: 0.5886 — saving ***
+
+[Epoch 9/50] LR_BB=9.44e-06 | LR_MLP=2.82e-04
+
+====================================================================
+EPOCH 9/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2869     |     1.4337    
+mos_rmse                       |    12.1674     |    11.8214    
+mos_plcc                       |     0.5444     |     0.5929    
+mos_srcc                       |     0.5344     |     0.5782    
+quality_class_rmse             |     0.6903     |     0.6883    
+spatial_flag_f1                |     0.5921     |     0.5516    
+hallucination_flag_f1          |     0.5307     |     0.4943    
+lighting_flag_f1               |     0.0022     |     0.0000    
+rendering_flag_f1              |     0.5227     |     0.4700    
+physics_violation_flag_f1      |     0.0060     |     0.0139    
+object_flicker_flag_f1         |     0.3955     |     0.3521    
+motion_inconsistency_flag_f1   |     0.0163     |     0.0110    
+====================================================================
+No improvement 1/20. Best: 0.5886
+
+[Epoch 10/50] LR_BB=9.30e-06 | LR_MLP=2.77e-04
+
+====================================================================
+EPOCH 10/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2787     |     1.4527    
+mos_rmse                       |    11.9994     |    11.8368    
+mos_plcc                       |     0.5617     |     0.5903    
+mos_srcc                       |     0.5531     |     0.5786    
+quality_class_rmse             |     0.6837     |     0.6823    
+spatial_flag_f1                |     0.5953     |     0.4916    
+hallucination_flag_f1          |     0.5335     |     0.4779    
+lighting_flag_f1               |     0.0043     |     0.0200    
+rendering_flag_f1              |     0.5252     |     0.4390    
+physics_violation_flag_f1      |     0.0209     |     0.0136    
+object_flicker_flag_f1         |     0.3693     |     0.3300    
+motion_inconsistency_flag_f1   |     0.0209     |     0.0217    
+====================================================================
+No improvement 2/20. Best: 0.5886
+
+[Epoch 11/50] LR_BB=9.14e-06 | LR_MLP=2.71e-04
+
+====================================================================
+EPOCH 11/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2555     |     1.4678    
+mos_rmse                       |    11.8647     |    11.6331    
+mos_plcc                       |     0.5740     |     0.6072    
+mos_srcc                       |     0.5654     |     0.5932    
+quality_class_rmse             |     0.6740     |     0.6670    
+spatial_flag_f1                |     0.6078     |     0.5093    
+hallucination_flag_f1          |     0.5601     |     0.5187    
+lighting_flag_f1               |     0.0065     |     0.0101    
+rendering_flag_f1              |     0.5431     |     0.4455    
+physics_violation_flag_f1      |     0.0269     |     0.0270    
+object_flicker_flag_f1         |     0.4396     |     0.3615    
+motion_inconsistency_flag_f1   |     0.0526     |     0.0663    
+====================================================================
+*** New Best SRCC: 0.5932 — saving ***
+
+[Epoch 12/50] LR_BB=8.97e-06 | LR_MLP=2.66e-04
+
+====================================================================
+EPOCH 12/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2437     |     1.4988    
+mos_rmse                       |    11.9134     |    11.8974    
+mos_plcc                       |     0.5695     |     0.5978    
+mos_srcc                       |     0.5657     |     0.5807    
+quality_class_rmse             |     0.6759     |     0.6855    
+spatial_flag_f1                |     0.6152     |     0.4849    
+hallucination_flag_f1          |     0.5593     |     0.4909    
+lighting_flag_f1               |     0.0150     |     0.0201    
+rendering_flag_f1              |     0.5536     |     0.4515    
+physics_violation_flag_f1      |     0.0325     |     0.0261    
+object_flicker_flag_f1         |     0.4178     |     0.3283    
+motion_inconsistency_flag_f1   |     0.0995     |     0.0106    
+====================================================================
+No improvement 1/20. Best: 0.5932
+
+[Epoch 13/50] LR_BB=8.78e-06 | LR_MLP=2.59e-04
+
+====================================================================
+EPOCH 13/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2263     |     1.4946    
+mos_rmse                       |    11.7433     |    11.7333    
+mos_plcc                       |     0.5860     |     0.6070    
+mos_srcc                       |     0.5771     |     0.5878    
+quality_class_rmse             |     0.6665     |     0.6776    
+spatial_flag_f1                |     0.6113     |     0.4878    
+hallucination_flag_f1          |     0.5752     |     0.4437    
+lighting_flag_f1               |     0.0255     |     0.0101    
+rendering_flag_f1              |     0.5588     |     0.4812    
+physics_violation_flag_f1      |     0.0608     |     0.0373    
+object_flicker_flag_f1         |     0.4334     |     0.3586    
+motion_inconsistency_flag_f1   |     0.1073     |     0.0697    
+====================================================================
+No improvement 2/20. Best: 0.5932
+
+[Epoch 14/50] LR_BB=8.58e-06 | LR_MLP=2.53e-04
+
+====================================================================
+EPOCH 14/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.2109     |     1.5178    
+mos_rmse                       |    11.7886     |    11.5072    
+mos_plcc                       |     0.5816     |     0.6149    
+mos_srcc                       |     0.5734     |     0.5999    
+quality_class_rmse             |     0.6696     |     0.6574    
+spatial_flag_f1                |     0.6234     |     0.5056    
+hallucination_flag_f1          |     0.5835     |     0.4614    
+lighting_flag_f1               |     0.0543     |     0.0101    
+rendering_flag_f1              |     0.5784     |     0.4371    
+physics_violation_flag_f1      |     0.1194     |     0.0497    
+object_flicker_flag_f1         |     0.4632     |     0.3155    
+motion_inconsistency_flag_f1   |     0.1237     |     0.0647    
+====================================================================
+*** New Best SRCC: 0.5999 — saving ***
+
+[Epoch 15/50] LR_BB=8.37e-06 | LR_MLP=2.46e-04
+
+====================================================================
+EPOCH 15/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1870     |     1.5314    
+mos_rmse                       |    11.5461     |    12.0138    
+mos_plcc                       |     0.6034     |     0.6007    
+mos_srcc                       |     0.5974     |     0.5789    
+quality_class_rmse             |     0.6562     |     0.6889    
+spatial_flag_f1                |     0.6418     |     0.5292    
+hallucination_flag_f1          |     0.6057     |     0.4667    
+lighting_flag_f1               |     0.0376     |     0.0588    
+rendering_flag_f1              |     0.5901     |     0.4363    
+physics_violation_flag_f1      |     0.1295     |     0.0617    
+object_flicker_flag_f1         |     0.4749     |     0.3889    
+motion_inconsistency_flag_f1   |     0.1389     |     0.1364    
+====================================================================
+No improvement 1/20. Best: 0.5999
+
+[Epoch 16/50] LR_BB=8.15e-06 | LR_MLP=2.38e-04
+
+====================================================================
+EPOCH 16/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1840     |     1.5315    
+mos_rmse                       |    11.6191     |    11.6844    
+mos_plcc                       |     0.5977     |     0.5983    
+mos_srcc                       |     0.5903     |     0.5829    
+quality_class_rmse             |     0.6628     |     0.6658    
+spatial_flag_f1                |     0.6321     |     0.5130    
+hallucination_flag_f1          |     0.5946     |     0.4813    
+lighting_flag_f1               |     0.0713     |     0.0667    
+rendering_flag_f1              |     0.5897     |     0.4916    
+physics_violation_flag_f1      |     0.1704     |     0.0380    
+object_flicker_flag_f1         |     0.4668     |     0.2684    
+motion_inconsistency_flag_f1   |     0.2042     |     0.1162    
+====================================================================
+No improvement 2/20. Best: 0.5999
+
+[Epoch 17/50] LR_BB=7.91e-06 | LR_MLP=2.31e-04
+
+====================================================================
+EPOCH 17/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1689     |     1.5702    
+mos_rmse                       |    11.5465     |    11.8867    
+mos_plcc                       |     0.6036     |     0.6089    
+mos_srcc                       |     0.5982     |     0.5945    
+quality_class_rmse             |     0.6537     |     0.6797    
+spatial_flag_f1                |     0.6516     |     0.5313    
+hallucination_flag_f1          |     0.6075     |     0.4984    
+lighting_flag_f1               |     0.0768     |     0.0571    
+rendering_flag_f1              |     0.5994     |     0.4326    
+physics_violation_flag_f1      |     0.1950     |     0.0366    
+object_flicker_flag_f1         |     0.4829     |     0.3371    
+motion_inconsistency_flag_f1   |     0.2010     |     0.1055    
+====================================================================
+No improvement 3/20. Best: 0.5999
+
+[Epoch 18/50] LR_BB=7.67e-06 | LR_MLP=2.23e-04
+
+====================================================================
+EPOCH 18/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1512     |     1.5956    
+mos_rmse                       |    11.4628     |    11.7516    
+mos_plcc                       |     0.6111     |     0.6062    
+mos_srcc                       |     0.6042     |     0.5952    
+quality_class_rmse             |     0.6483     |     0.6692    
+spatial_flag_f1                |     0.6617     |     0.4456    
+hallucination_flag_f1          |     0.6252     |     0.4606    
+lighting_flag_f1               |     0.0672     |     0.0711    
+rendering_flag_f1              |     0.5844     |     0.4362    
+physics_violation_flag_f1      |     0.2608     |     0.0847    
+object_flicker_flag_f1         |     0.5201     |     0.4286    
+motion_inconsistency_flag_f1   |     0.2301     |     0.1840    
+====================================================================
+No improvement 4/20. Best: 0.5999
+
+[Epoch 19/50] LR_BB=7.42e-06 | LR_MLP=2.14e-04
+
+====================================================================
+EPOCH 19/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1295     |     1.6395    
+mos_rmse                       |    11.4403     |    11.8914    
+mos_plcc                       |     0.6131     |     0.5987    
+mos_srcc                       |     0.6015     |     0.5859    
+quality_class_rmse             |     0.6512     |     0.6716    
+spatial_flag_f1                |     0.6616     |     0.4995    
+hallucination_flag_f1          |     0.6308     |     0.4953    
+lighting_flag_f1               |     0.1366     |     0.0633    
+rendering_flag_f1              |     0.6141     |     0.4470    
+physics_violation_flag_f1      |     0.2857     |     0.0870    
+object_flicker_flag_f1         |     0.5280     |     0.4207    
+motion_inconsistency_flag_f1   |     0.2556     |     0.2353    
+====================================================================
+No improvement 5/20. Best: 0.5999
+
+[Epoch 20/50] LR_BB=7.16e-06 | LR_MLP=2.06e-04
+
+====================================================================
+EPOCH 20/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.1045     |     1.6765    
+mos_rmse                       |    11.3750     |    11.8273    
+mos_plcc                       |     0.6193     |     0.6019    
+mos_srcc                       |     0.6092     |     0.5893    
+quality_class_rmse             |     0.6439     |     0.6692    
+spatial_flag_f1                |     0.6768     |     0.5019    
+hallucination_flag_f1          |     0.6386     |     0.4796    
+lighting_flag_f1               |     0.1512     |     0.0924    
+rendering_flag_f1              |     0.6380     |     0.4576    
+physics_violation_flag_f1      |     0.3176     |     0.1053    
+object_flicker_flag_f1         |     0.5304     |     0.3644    
+motion_inconsistency_flag_f1   |     0.3125     |     0.1850    
+====================================================================
+No improvement 6/20. Best: 0.5999
+
+[Epoch 21/50] LR_BB=6.89e-06 | LR_MLP=1.97e-04
+
+====================================================================
+EPOCH 21/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0959     |     1.6407    
+mos_rmse                       |    11.3539     |    11.8253    
+mos_plcc                       |     0.6204     |     0.5922    
+mos_srcc                       |     0.6131     |     0.5714    
+quality_class_rmse             |     0.6412     |     0.6727    
+spatial_flag_f1                |     0.6689     |     0.4663    
+hallucination_flag_f1          |     0.6548     |     0.4757    
+lighting_flag_f1               |     0.1863     |     0.0675    
+rendering_flag_f1              |     0.6369     |     0.4829    
+physics_violation_flag_f1      |     0.3574     |     0.0457    
+object_flicker_flag_f1         |     0.5298     |     0.3590    
+motion_inconsistency_flag_f1   |     0.3290     |     0.2037    
+====================================================================
+No improvement 7/20. Best: 0.5999
+
+[Epoch 22/50] LR_BB=6.62e-06 | LR_MLP=1.88e-04
+
+====================================================================
+EPOCH 22/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0822     |     1.6796    
+mos_rmse                       |    11.1734     |    11.8465    
+mos_plcc                       |     0.6356     |     0.6013    
+mos_srcc                       |     0.6251     |     0.5850    
+quality_class_rmse             |     0.6331     |     0.6696    
+spatial_flag_f1                |     0.6751     |     0.4760    
+hallucination_flag_f1          |     0.6512     |     0.4703    
+lighting_flag_f1               |     0.2020     |     0.0906    
+rendering_flag_f1              |     0.6406     |     0.4483    
+physics_violation_flag_f1      |     0.3725     |     0.0733    
+object_flicker_flag_f1         |     0.5572     |     0.3677    
+motion_inconsistency_flag_f1   |     0.3547     |     0.2723    
+====================================================================
+No improvement 8/20. Best: 0.5999
+
+[Epoch 23/50] LR_BB=6.34e-06 | LR_MLP=1.79e-04
+
+====================================================================
+EPOCH 23/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0703     |     1.7139    
+mos_rmse                       |    11.1362     |    11.7216    
+mos_plcc                       |     0.6393     |     0.6038    
+mos_srcc                       |     0.6292     |     0.5867    
+quality_class_rmse             |     0.6284     |     0.6650    
+spatial_flag_f1                |     0.6818     |     0.5115    
+hallucination_flag_f1          |     0.6581     |     0.4696    
+lighting_flag_f1               |     0.1969     |     0.0723    
+rendering_flag_f1              |     0.6524     |     0.4415    
+physics_violation_flag_f1      |     0.3705     |     0.0649    
+object_flicker_flag_f1         |     0.5538     |     0.3591    
+motion_inconsistency_flag_f1   |     0.3482     |     0.1506    
+====================================================================
+No improvement 9/20. Best: 0.5999
+
+[Epoch 24/50] LR_BB=6.06e-06 | LR_MLP=1.69e-04
+
+====================================================================
+EPOCH 24/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0440     |     1.7762    
+mos_rmse                       |    11.1182     |    11.7480    
+mos_plcc                       |     0.6406     |     0.6111    
+mos_srcc                       |     0.6325     |     0.5961    
+quality_class_rmse             |     0.6276     |     0.6682    
+spatial_flag_f1                |     0.6891     |     0.4914    
+hallucination_flag_f1          |     0.6627     |     0.4893    
+lighting_flag_f1               |     0.2575     |     0.0531    
+rendering_flag_f1              |     0.6582     |     0.4650    
+physics_violation_flag_f1      |     0.4043     |     0.0923    
+object_flicker_flag_f1         |     0.5832     |     0.3644    
+motion_inconsistency_flag_f1   |     0.3819     |     0.2214    
+====================================================================
+No improvement 10/20. Best: 0.5999
+
+[Epoch 25/50] LR_BB=5.78e-06 | LR_MLP=1.60e-04
+
+====================================================================
+EPOCH 25/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0382     |     1.7686    
+mos_rmse                       |    11.0542     |    11.6868    
+mos_plcc                       |     0.6458     |     0.6089    
+mos_srcc                       |     0.6359     |     0.5877    
+quality_class_rmse             |     0.6296     |     0.6600    
+spatial_flag_f1                |     0.7015     |     0.4738    
+hallucination_flag_f1          |     0.6828     |     0.4693    
+lighting_flag_f1               |     0.2785     |     0.1039    
+rendering_flag_f1              |     0.6671     |     0.4788    
+physics_violation_flag_f1      |     0.4091     |     0.0765    
+object_flicker_flag_f1         |     0.5760     |     0.3563    
+motion_inconsistency_flag_f1   |     0.3682     |     0.2676    
+====================================================================
+No improvement 11/20. Best: 0.5999
+
+[Epoch 26/50] LR_BB=5.50e-06 | LR_MLP=1.50e-04
+
+====================================================================
+EPOCH 26/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0240     |     1.8221    
+mos_rmse                       |    10.9980     |    11.8126    
+mos_plcc                       |     0.6503     |     0.6122    
+mos_srcc                       |     0.6392     |     0.5954    
+quality_class_rmse             |     0.6237     |     0.6704    
+spatial_flag_f1                |     0.7089     |     0.5041    
+hallucination_flag_f1          |     0.6792     |     0.4790    
+lighting_flag_f1               |     0.2788     |     0.0917    
+rendering_flag_f1              |     0.6699     |     0.4023    
+physics_violation_flag_f1      |     0.4352     |     0.1019    
+object_flicker_flag_f1         |     0.5917     |     0.3668    
+motion_inconsistency_flag_f1   |     0.3919     |     0.2451    
+====================================================================
+No improvement 12/20. Best: 0.5999
+
+[Epoch 27/50] LR_BB=5.22e-06 | LR_MLP=1.41e-04
+nohup: ignoring input
+Loading datasets...
+Train: 1166 batches | Val: 250 batches
+Config: Dropout=0.3 | Patience=20
+Total=5,189,561  Frozen=1,221,712  Trainable=3,967,849
+
+Resuming from /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/checkpoint_latest.pth...
+Traceback (most recent call last):
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/train_e2e.py", line 148, in <module>
+    main()
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/train_e2e.py", line 92, in main
+    ckpt = torch.load(ckpt_path, map_location=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/serialization.py", line 1548, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy._core.multiarray.scalar was not an allowed global by default. Please use `torch.serialization.add_safe_globals([numpy._core.multiarray.scalar])` or the `torch.serialization.safe_globals([numpy._core.multiarray.scalar])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+nohup: ignoring input
+Loading datasets...
+Train: 1166 batches | Val: 250 batches
+Config: Dropout=0.3 | Patience=20
+Total=5,189,561  Frozen=1,221,712  Trainable=3,967,849
+
+Resuming from /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/checkpoint_latest.pth...
+Starting Training (Dropout=0.3 | Patience=20)...
+
+
+[Epoch 27/50] LR_BB=5.22e-06 | LR_MLP=1.41e-04
+Traceback (most recent call last):
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/train_e2e.py", line 148, in <module>
+    main()
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/train_e2e.py", line 107, in main
+    train_m = run_epoch(model, train_dl, optimizer, device, is_train=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/train_e2e.py", line 41, in run_epoch
+    preds = model(videos)
+            ^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/e2e_model.py", line 104, in forward
+    features = self.backbone_features(x)        # [B*T, 960, 7, 7]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torchvision/models/mobilenetv3.py", line 112, in forward
+    result = self.block(input)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 553, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user3/.local/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 548, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 148.00 MiB. GPU 2 has a total capacity of 47.37 GiB of which 94.19 MiB is free. Process 2269826 has 46.58 GiB memory in use. Including non-PyTorch memory, this process has 686.00 MiB memory in use. Of the allocated memory 172.73 MiB is allocated by PyTorch, and 15.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+nohup: ignoring input
+Loading datasets...
+Train: 1166 batches | Val: 250 batches
+Config: Dropout=0.3 | Patience=20
+Total=5,189,561  Frozen=1,221,712  Trainable=3,967,849
+
+Resuming from /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/checkpoint_latest.pth...
+Starting Training (Dropout=0.3 | Patience=20)...
+
+
+[Epoch 27/50] LR_BB=5.22e-06 | LR_MLP=1.41e-04
+
+====================================================================
+EPOCH 27/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0132     |     1.7696    
+mos_rmse                       |    10.9364     |    11.5889    
+mos_plcc                       |     0.6553     |     0.6145    
+mos_srcc                       |     0.6461     |     0.5959    
+quality_class_rmse             |     0.6192     |     0.6599    
+spatial_flag_f1                |     0.7044     |     0.4763    
+hallucination_flag_f1          |     0.6821     |     0.4622    
+lighting_flag_f1               |     0.3292     |     0.0989    
+rendering_flag_f1              |     0.6786     |     0.4432    
+physics_violation_flag_f1      |     0.4645     |     0.1026    
+object_flicker_flag_f1         |     0.6087     |     0.3778    
+motion_inconsistency_flag_f1   |     0.4105     |     0.2778    
+====================================================================
+No improvement 13/20. Best: 0.5999
+
+[Epoch 28/50] LR_BB=4.94e-06 | LR_MLP=1.32e-04
+
+====================================================================
+EPOCH 28/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     1.0037     |     1.8689    
+mos_rmse                       |    11.0574     |    11.8795    
+mos_plcc                       |     0.6455     |     0.6090    
+mos_srcc                       |     0.6328     |     0.5936    
+quality_class_rmse             |     0.6273     |     0.6681    
+spatial_flag_f1                |     0.7065     |     0.4862    
+hallucination_flag_f1          |     0.6972     |     0.4732    
+lighting_flag_f1               |     0.3207     |     0.0664    
+rendering_flag_f1              |     0.6774     |     0.4336    
+physics_violation_flag_f1      |     0.4620     |     0.0667    
+object_flicker_flag_f1         |     0.6042     |     0.3728    
+motion_inconsistency_flag_f1   |     0.4334     |     0.2588    
+====================================================================
+No improvement 14/20. Best: 0.5999
+
+[Epoch 29/50] LR_BB=4.66e-06 | LR_MLP=1.22e-04
+
+====================================================================
+EPOCH 29/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9929     |     1.8751    
+mos_rmse                       |    11.0395     |    11.8414    
+mos_plcc                       |     0.6469     |     0.6046    
+mos_srcc                       |     0.6359     |     0.5839    
+quality_class_rmse             |     0.6233     |     0.6675    
+spatial_flag_f1                |     0.7084     |     0.4560    
+hallucination_flag_f1          |     0.6926     |     0.4655    
+lighting_flag_f1               |     0.3757     |     0.1071    
+rendering_flag_f1              |     0.6791     |     0.4458    
+physics_violation_flag_f1      |     0.4573     |     0.0952    
+object_flicker_flag_f1         |     0.6069     |     0.3590    
+motion_inconsistency_flag_f1   |     0.4537     |     0.2275    
+====================================================================
+No improvement 15/20. Best: 0.5999
+
+[Epoch 30/50] LR_BB=4.38e-06 | LR_MLP=1.13e-04
+
+====================================================================
+EPOCH 30/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9851     |     1.8664    
+mos_rmse                       |    10.9548     |    11.6597    
+mos_plcc                       |     0.6534     |     0.6177    
+mos_srcc                       |     0.6433     |     0.5968    
+quality_class_rmse             |     0.6195     |     0.6610    
+spatial_flag_f1                |     0.7143     |     0.4411    
+hallucination_flag_f1          |     0.6935     |     0.4518    
+lighting_flag_f1               |     0.3704     |     0.0837    
+rendering_flag_f1              |     0.6784     |     0.4227    
+physics_violation_flag_f1      |     0.4898     |     0.0707    
+object_flicker_flag_f1         |     0.6075     |     0.3652    
+motion_inconsistency_flag_f1   |     0.4574     |     0.2700    
+====================================================================
+No improvement 16/20. Best: 0.5999
+
+[Epoch 31/50] LR_BB=4.11e-06 | LR_MLP=1.04e-04
+
+====================================================================
+EPOCH 31/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9691     |     1.9103    
+mos_rmse                       |    10.8347     |    11.5140    
+mos_plcc                       |     0.6629     |     0.6273    
+mos_srcc                       |     0.6508     |     0.6113    
+quality_class_rmse             |     0.6159     |     0.6530    
+spatial_flag_f1                |     0.7210     |     0.4662    
+hallucination_flag_f1          |     0.6947     |     0.4571    
+lighting_flag_f1               |     0.4050     |     0.1049    
+rendering_flag_f1              |     0.7063     |     0.4634    
+physics_violation_flag_f1      |     0.5005     |     0.0524    
+object_flicker_flag_f1         |     0.6190     |     0.3794    
+motion_inconsistency_flag_f1   |     0.4703     |     0.2568    
+====================================================================
+*** New Best SRCC: 0.6113 — saving ***
+
+[Epoch 32/50] LR_BB=3.84e-06 | LR_MLP=9.55e-05
+
+====================================================================
+EPOCH 32/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9521     |     1.9239    
+mos_rmse                       |    10.9247     |    11.6791    
+mos_plcc                       |     0.6560     |     0.6161    
+mos_srcc                       |     0.6508     |     0.5980    
+quality_class_rmse             |     0.6172     |     0.6571    
+spatial_flag_f1                |     0.7347     |     0.4949    
+hallucination_flag_f1          |     0.7075     |     0.4648    
+lighting_flag_f1               |     0.4126     |     0.1107    
+rendering_flag_f1              |     0.6997     |     0.4628    
+physics_violation_flag_f1      |     0.5435     |     0.0971    
+object_flicker_flag_f1         |     0.6303     |     0.3675    
+motion_inconsistency_flag_f1   |     0.4966     |     0.2607    
+====================================================================
+No improvement 1/20. Best: 0.6113
+
+[Epoch 33/50] LR_BB=3.58e-06 | LR_MLP=8.68e-05
+
+====================================================================
+EPOCH 33/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9423     |     1.8984    
+mos_rmse                       |    10.6697     |    11.5448    
+mos_plcc                       |     0.6758     |     0.6229    
+mos_srcc                       |     0.6700     |     0.6071    
+quality_class_rmse             |     0.6061     |     0.6552    
+spatial_flag_f1                |     0.7274     |     0.5095    
+hallucination_flag_f1          |     0.7126     |     0.4743    
+lighting_flag_f1               |     0.4187     |     0.0846    
+rendering_flag_f1              |     0.7068     |     0.4430    
+physics_violation_flag_f1      |     0.5544     |     0.0939    
+object_flicker_flag_f1         |     0.6268     |     0.3509    
+motion_inconsistency_flag_f1   |     0.4876     |     0.2711    
+====================================================================
+No improvement 2/20. Best: 0.6113
+
+[Epoch 34/50] LR_BB=3.33e-06 | LR_MLP=7.85e-05
+
+====================================================================
+EPOCH 34/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9325     |     1.9915    
+mos_rmse                       |    10.8439     |    11.6486    
+mos_plcc                       |     0.6622     |     0.6173    
+mos_srcc                       |     0.6528     |     0.6005    
+quality_class_rmse             |     0.6130     |     0.6593    
+spatial_flag_f1                |     0.7453     |     0.4790    
+hallucination_flag_f1          |     0.7171     |     0.4594    
+lighting_flag_f1               |     0.4034     |     0.1029    
+rendering_flag_f1              |     0.7106     |     0.4324    
+physics_violation_flag_f1      |     0.5256     |     0.0948    
+object_flicker_flag_f1         |     0.6451     |     0.3660    
+motion_inconsistency_flag_f1   |     0.4889     |     0.2861    
+====================================================================
+No improvement 3/20. Best: 0.6113
+
+[Epoch 35/50] LR_BB=3.09e-06 | LR_MLP=7.04e-05
+
+====================================================================
+EPOCH 35/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9177     |     2.0121    
+mos_rmse                       |    10.8292     |    11.6131    
+mos_plcc                       |     0.6636     |     0.6160    
+mos_srcc                       |     0.6509     |     0.6011    
+quality_class_rmse             |     0.6142     |     0.6575    
+spatial_flag_f1                |     0.7240     |     0.5063    
+hallucination_flag_f1          |     0.7233     |     0.4600    
+lighting_flag_f1               |     0.4354     |     0.0837    
+rendering_flag_f1              |     0.7161     |     0.4542    
+physics_violation_flag_f1      |     0.5701     |     0.0510    
+object_flicker_flag_f1         |     0.6581     |     0.4087    
+motion_inconsistency_flag_f1   |     0.5175     |     0.3000    
+====================================================================
+No improvement 4/20. Best: 0.6113
+
+[Epoch 36/50] LR_BB=2.85e-06 | LR_MLP=6.26e-05
+
+====================================================================
+EPOCH 36/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9215     |     2.0787    
+mos_rmse                       |    10.6774     |    11.7100    
+mos_plcc                       |     0.6752     |     0.6232    
+mos_srcc                       |     0.6674     |     0.6061    
+quality_class_rmse             |     0.6057     |     0.6615    
+spatial_flag_f1                |     0.7417     |     0.4867    
+hallucination_flag_f1          |     0.7192     |     0.4655    
+lighting_flag_f1               |     0.4136     |     0.0833    
+rendering_flag_f1              |     0.7210     |     0.4559    
+physics_violation_flag_f1      |     0.5545     |     0.0995    
+object_flicker_flag_f1         |     0.6622     |     0.3714    
+motion_inconsistency_flag_f1   |     0.5186     |     0.2260    
+====================================================================
+No improvement 5/20. Best: 0.6113
+
+[Epoch 37/50] LR_BB=2.63e-06 | LR_MLP=5.52e-05
+
+====================================================================
+EPOCH 37/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.9021     |     2.0337    
+mos_rmse                       |    10.5242     |    11.5706    
+mos_plcc                       |     0.6867     |     0.6240    
+mos_srcc                       |     0.6783     |     0.6083    
+quality_class_rmse             |     0.6018     |     0.6550    
+spatial_flag_f1                |     0.7426     |     0.5042    
+hallucination_flag_f1          |     0.7249     |     0.4700    
+lighting_flag_f1               |     0.4574     |     0.1029    
+rendering_flag_f1              |     0.7260     |     0.4165    
+physics_violation_flag_f1      |     0.5883     |     0.1057    
+object_flicker_flag_f1         |     0.6535     |     0.3932    
+motion_inconsistency_flag_f1   |     0.5158     |     0.2568    
+====================================================================
+No improvement 6/20. Best: 0.6113
+
+[Epoch 38/50] LR_BB=2.42e-06 | LR_MLP=4.82e-05
+
+====================================================================
+EPOCH 38/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8918     |     1.9899    
+mos_rmse                       |    10.8059     |    11.4679    
+mos_plcc                       |     0.6653     |     0.6257    
+mos_srcc                       |     0.6580     |     0.6109    
+quality_class_rmse             |     0.6110     |     0.6510    
+spatial_flag_f1                |     0.7490     |     0.5082    
+hallucination_flag_f1          |     0.7270     |     0.4595    
+lighting_flag_f1               |     0.4486     |     0.0879    
+rendering_flag_f1              |     0.7279     |     0.4359    
+physics_violation_flag_f1      |     0.5731     |     0.0891    
+object_flicker_flag_f1         |     0.6564     |     0.4134    
+motion_inconsistency_flag_f1   |     0.5280     |     0.3017    
+====================================================================
+No improvement 7/20. Best: 0.6113
+
+[Epoch 39/50] LR_BB=2.22e-06 | LR_MLP=4.15e-05
+
+====================================================================
+EPOCH 39/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8961     |     2.0542    
+mos_rmse                       |    10.5709     |    11.4999    
+mos_plcc                       |     0.6831     |     0.6281    
+mos_srcc                       |     0.6758     |     0.6117    
+quality_class_rmse             |     0.5982     |     0.6532    
+spatial_flag_f1                |     0.7452     |     0.5138    
+hallucination_flag_f1          |     0.7309     |     0.4730    
+lighting_flag_f1               |     0.4668     |     0.0969    
+rendering_flag_f1              |     0.7234     |     0.4463    
+physics_violation_flag_f1      |     0.6207     |     0.0841    
+object_flicker_flag_f1         |     0.6576     |     0.3736    
+motion_inconsistency_flag_f1   |     0.5270     |     0.2711    
+====================================================================
+*** New Best SRCC: 0.6117 — saving ***
+
+[Epoch 40/50] LR_BB=2.03e-06 | LR_MLP=3.53e-05
+
+====================================================================
+EPOCH 40/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8902     |     2.0601    
+mos_rmse                       |    10.5368     |    11.5606    
+mos_plcc                       |     0.6855     |     0.6287    
+mos_srcc                       |     0.6775     |     0.6159    
+quality_class_rmse             |     0.6005     |     0.6559    
+spatial_flag_f1                |     0.7468     |     0.4509    
+hallucination_flag_f1          |     0.7247     |     0.4746    
+lighting_flag_f1               |     0.4613     |     0.0758    
+rendering_flag_f1              |     0.7249     |     0.4667    
+physics_violation_flag_f1      |     0.5867     |     0.1026    
+object_flicker_flag_f1         |     0.6731     |     0.3800    
+motion_inconsistency_flag_f1   |     0.5243     |     0.2571    
+====================================================================
+*** New Best SRCC: 0.6159 — saving ***
+
+[Epoch 41/50] LR_BB=1.86e-06 | LR_MLP=2.96e-05
+
+====================================================================
+EPOCH 41/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8838     |     2.0404    
+mos_rmse                       |    10.5554     |    11.5527    
+mos_plcc                       |     0.6843     |     0.6231    
+mos_srcc                       |     0.6754     |     0.6075    
+quality_class_rmse             |     0.6000     |     0.6547    
+spatial_flag_f1                |     0.7519     |     0.5005    
+hallucination_flag_f1          |     0.7274     |     0.4672    
+lighting_flag_f1               |     0.4734     |     0.1004    
+rendering_flag_f1              |     0.7273     |     0.4391    
+physics_violation_flag_f1      |     0.6138     |     0.0704    
+object_flicker_flag_f1         |     0.6693     |     0.3636    
+motion_inconsistency_flag_f1   |     0.5418     |     0.2677    
+====================================================================
+No improvement 1/20. Best: 0.6159
+
+[Epoch 42/50] LR_BB=1.70e-06 | LR_MLP=2.43e-05
+
+====================================================================
+EPOCH 42/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8886     |     2.0289    
+mos_rmse                       |    10.4871     |    11.6297    
+mos_plcc                       |     0.6892     |     0.6178    
+mos_srcc                       |     0.6796     |     0.6025    
+quality_class_rmse             |     0.5977     |     0.6577    
+spatial_flag_f1                |     0.7522     |     0.5053    
+hallucination_flag_f1          |     0.7345     |     0.4732    
+lighting_flag_f1               |     0.4874     |     0.1027    
+rendering_flag_f1              |     0.7230     |     0.4479    
+physics_violation_flag_f1      |     0.5792     |     0.0745    
+object_flicker_flag_f1         |     0.6658     |     0.3721    
+motion_inconsistency_flag_f1   |     0.5439     |     0.2644    
+====================================================================
+No improvement 2/20. Best: 0.6159
+
+[Epoch 43/50] LR_BB=1.56e-06 | LR_MLP=1.95e-05
+
+====================================================================
+EPOCH 43/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8801     |     2.0750    
+mos_rmse                       |    10.5144     |    11.6414    
+mos_plcc                       |     0.6874     |     0.6250    
+mos_srcc                       |     0.6772     |     0.6079    
+quality_class_rmse             |     0.5991     |     0.6586    
+spatial_flag_f1                |     0.7621     |     0.4765    
+hallucination_flag_f1          |     0.7392     |     0.4707    
+lighting_flag_f1               |     0.5062     |     0.0903    
+rendering_flag_f1              |     0.7288     |     0.4197    
+physics_violation_flag_f1      |     0.5929     |     0.0948    
+object_flicker_flag_f1         |     0.6690     |     0.3760    
+motion_inconsistency_flag_f1   |     0.5524     |     0.2632    
+====================================================================
+No improvement 3/20. Best: 0.6159
+
+[Epoch 44/50] LR_BB=1.43e-06 | LR_MLP=1.52e-05
+
+====================================================================
+EPOCH 44/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8632     |     2.1015    
+mos_rmse                       |    10.5674     |    11.4893    
+mos_plcc                       |     0.6832     |     0.6253    
+mos_srcc                       |     0.6753     |     0.6097    
+quality_class_rmse             |     0.6000     |     0.6517    
+spatial_flag_f1                |     0.7585     |     0.4815    
+hallucination_flag_f1          |     0.7475     |     0.4426    
+lighting_flag_f1               |     0.4642     |     0.0929    
+rendering_flag_f1              |     0.7502     |     0.4330    
+physics_violation_flag_f1      |     0.5816     |     0.0792    
+object_flicker_flag_f1         |     0.6854     |     0.3881    
+motion_inconsistency_flag_f1   |     0.5517     |     0.2853    
+====================================================================
+No improvement 4/20. Best: 0.6159
+
+[Epoch 45/50] LR_BB=1.32e-06 | LR_MLP=1.15e-05
+
+====================================================================
+EPOCH 45/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8665     |     2.0462    
+mos_rmse                       |    10.4766     |    11.6338    
+mos_plcc                       |     0.6900     |     0.6229    
+mos_srcc                       |     0.6823     |     0.6057    
+quality_class_rmse             |     0.5990     |     0.6592    
+spatial_flag_f1                |     0.7601     |     0.4740    
+hallucination_flag_f1          |     0.7400     |     0.4814    
+lighting_flag_f1               |     0.4949     |     0.1100    
+rendering_flag_f1              |     0.7300     |     0.4169    
+physics_violation_flag_f1      |     0.5996     |     0.0874    
+object_flicker_flag_f1         |     0.6816     |     0.3866    
+motion_inconsistency_flag_f1   |     0.5669     |     0.2731    
+====================================================================
+No improvement 5/20. Best: 0.6159
+
+[Epoch 46/50] LR_BB=1.22e-06 | LR_MLP=8.32e-06
+
+====================================================================
+EPOCH 46/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8696     |     2.0599    
+mos_rmse                       |    10.3693     |    11.5115    
+mos_plcc                       |     0.6977     |     0.6260    
+mos_srcc                       |     0.6916     |     0.6100    
+quality_class_rmse             |     0.5901     |     0.6532    
+spatial_flag_f1                |     0.7598     |     0.4874    
+hallucination_flag_f1          |     0.7289     |     0.4734    
+lighting_flag_f1               |     0.5004     |     0.0879    
+rendering_flag_f1              |     0.7426     |     0.4343    
+physics_violation_flag_f1      |     0.6031     |     0.0939    
+object_flicker_flag_f1         |     0.6898     |     0.3846    
+motion_inconsistency_flag_f1   |     0.5696     |     0.2953    
+====================================================================
+No improvement 6/20. Best: 0.6159
+
+[Epoch 47/50] LR_BB=1.14e-06 | LR_MLP=5.70e-06
+
+====================================================================
+EPOCH 47/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8648     |     2.0897    
+mos_rmse                       |    10.5070     |    11.5914    
+mos_plcc                       |     0.6879     |     0.6256    
+mos_srcc                       |     0.6810     |     0.6093    
+quality_class_rmse             |     0.6002     |     0.6565    
+spatial_flag_f1                |     0.7598     |     0.4787    
+hallucination_flag_f1          |     0.7494     |     0.4741    
+lighting_flag_f1               |     0.4780     |     0.0969    
+rendering_flag_f1              |     0.7383     |     0.4390    
+physics_violation_flag_f1      |     0.6247     |     0.0766    
+object_flicker_flag_f1         |     0.6760     |     0.3745    
+motion_inconsistency_flag_f1   |     0.5330     |     0.2935    
+====================================================================
+No improvement 7/20. Best: 0.6159
+
+[Epoch 48/50] LR_BB=1.08e-06 | LR_MLP=3.65e-06
+
+====================================================================
+EPOCH 48/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8582     |     2.0497    
+mos_rmse                       |    10.5022     |    11.5427    
+mos_plcc                       |     0.6883     |     0.6254    
+mos_srcc                       |     0.6754     |     0.6099    
+quality_class_rmse             |     0.5990     |     0.6548    
+spatial_flag_f1                |     0.7646     |     0.4750    
+hallucination_flag_f1          |     0.7456     |     0.4818    
+lighting_flag_f1               |     0.5102     |     0.1115    
+rendering_flag_f1              |     0.7428     |     0.4404    
+physics_violation_flag_f1      |     0.6062     |     0.0841    
+object_flicker_flag_f1         |     0.6828     |     0.3733    
+motion_inconsistency_flag_f1   |     0.5458     |     0.2414    
+====================================================================
+No improvement 8/20. Best: 0.6159
+
+[Epoch 49/50] LR_BB=1.04e-06 | LR_MLP=2.18e-06
+
+====================================================================
+EPOCH 49/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8580     |     2.0995    
+mos_rmse                       |    10.5110     |    11.5943    
+mos_plcc                       |     0.6875     |     0.6225    
+mos_srcc                       |     0.6823     |     0.6052    
+quality_class_rmse             |     0.6014     |     0.6553    
+spatial_flag_f1                |     0.7648     |     0.5071    
+hallucination_flag_f1          |     0.7444     |     0.4669    
+lighting_flag_f1               |     0.5014     |     0.1000    
+rendering_flag_f1              |     0.7431     |     0.4497    
+physics_violation_flag_f1      |     0.6004     |     0.0697    
+object_flicker_flag_f1         |     0.6907     |     0.3694    
+motion_inconsistency_flag_f1   |     0.5557     |     0.2879    
+====================================================================
+No improvement 9/20. Best: 0.6159
+
+[Epoch 50/50] LR_BB=1.01e-06 | LR_MLP=1.30e-06
+
+====================================================================
+EPOCH 50/50
+--------------------------------------------------------------------
+Metric                         |     Train      |      Val      
+--------------------------------------------------------------------
+total_loss                     |     0.8678     |     2.1620    
+mos_rmse                       |    10.3841     |    11.5630    
+mos_plcc                       |     0.6966     |     0.6218    
+mos_srcc                       |     0.6856     |     0.6052    
+quality_class_rmse             |     0.5890     |     0.6552    
+spatial_flag_f1                |     0.7642     |     0.4702    
+hallucination_flag_f1          |     0.7396     |     0.4740    
+lighting_flag_f1               |     0.4817     |     0.0915    
+rendering_flag_f1              |     0.7448     |     0.4396    
+physics_violation_flag_f1      |     0.6194     |     0.0700    
+object_flicker_flag_f1         |     0.6798     |     0.3822    
+motion_inconsistency_flag_f1   |     0.5476     |     0.2391    
+====================================================================
+No improvement 10/20. Best: 0.6159
+
+Training Done! Best Val SRCC: 0.6159
+Log: /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/training_log_e2e.csv

@@ -1,0 +1,26 @@
+{
+    "Config": {
+        "dropout": 0.3,
+        "patience": 20
+    },
+    "MOS Metrics": {
+        "mos_SRCC": 0.6628045687678894,
+        "mos_PLCC": 0.662924587726593,
+        "mos_RMSE": 11.142110289532301
+    },
+    "Quality Classification": {
+        "qualityclass_accuracy": 0.5913333333333334
+    },
+    "Per-flag F1 scores": {
+        "spatial_flag_f1": 0.5321428571428571,
+        "hallucination_flag_f1": 0.4873417721518987,
+        "lighting_flag_f1": 0.12286689419795221,
+        "rendering_flag_f1": 0.49375,
+        "physical_violation_flag_f1": 0.11818181818181818,
+        "motion_inconsistency_flag_f1": 0.2,
+        "object_flicker_flag_f1": 0.4132231404958678
+    },
+    "Overall": {
+        "macro_avg_flag_f1": 0.3382152117386278
+    }
+}

@@ -1,0 +1,28 @@
+nohup: ignoring input
+/home/user3/.local/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Loading test dataset...
+Loaded: /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/best_model_e2e.pth
+Inference on 188 test batches...
+
+=======================================================
+    FINAL TEST METRICS  [Dropout=0.3 | Patience=20]    
+=======================================================
+  MOS SRCC : 0.6589
+  MOS PLCC : 0.6512
+  MOS RMSE : 11.3005
+  QC Acc   : 0.5673
+
+Per-flag F1 Scores:
+  spatial_flag_f1                    : 0.4372
+  hallucination_flag_f1              : 0.5133
+  lighting_flag_f1                   : 0.0471
+  rendering_flag_f1                  : 0.4486
+  physical_violation_flag_f1         : 0.1364
+  motion_inconsistency_flag_f1       : 0.2713
+  object_flicker_flag_f1             : 0.3643
+
+  Macro Avg Flag F1 : 0.3169
+=======================================================
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/test_results.json
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV3-D03/mos_scatter_plot.png

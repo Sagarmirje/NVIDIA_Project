@@ -1,0 +1,29 @@
+/home/user3/.local/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Loading test dataset...
+Using device: cuda:0
+Loading weights from /home/drive3/10k_MobileNet_tsm/MobileNetV3-TSM/best_model_e2e.pth...
+Running inference on 188 test batches...
+
+=======================================================
+          FINAL TEST METRICS — MobileNetV3-TSM         
+=======================================================
+  MOS SRCC : 0.6380
+  MOS PLCC : 0.6325
+  MOS RMSE : 11.6985
+  QC Acc   : 0.5573
+
+Per-flag F1 Scores:
+  spatial_flag_f1                    : 0.4665
+  hallucination_flag_f1              : 0.4865
+  lighting_flag_f1                   : 0.0905
+  rendering_flag_f1                  : 0.4883
+  physical_violation_flag_f1         : 0.0667
+  motion_inconsistency_flag_f1       : 0.2938
+  object_flicker_flag_f1             : 0.3774
+
+  Macro Avg Flag F1 : 0.3243
+=======================================================
+
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV3-TSM/test_results.json
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV3-TSM/mos_scatter_plot.png

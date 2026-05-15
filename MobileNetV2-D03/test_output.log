@@ -1,0 +1,32 @@
+nohup: ignoring input
+/home/user3/.local/lib/python3.12/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+/home/user3/.local/lib/python3.12/site-packages/mmcv/cnn/bricks/transformer.py:33: UserWarning: Fail to import ``MultiScaleDeformableAttention`` from ``mmcv.ops.multi_scale_deform_attn``, You should install ``mmcv`` rather than ``mmcv-lite`` if you need this module. 
+  warnings.warn('Fail to import ``MultiScaleDeformableAttention`` from '
+Loading test dataset...
+Loads checkpoint by mmcls backend from path: mmcls://mobilenet_v2
+05/15 12:23:50 - mmengine - INFO - <All keys matched successfully>
+Loaded: /home/drive3/10k_MobileNet_tsm/MobileNetV2-D03/best_model_e2e.pth
+Inference on 188 test batches...
+
+=======================================================
+    FINAL TEST METRICS  [Dropout=0.3 | Patience=20]    
+=======================================================
+  MOS SRCC : 0.6628
+  MOS PLCC : 0.6629
+  MOS RMSE : 11.1421
+  QC Acc   : 0.5913
+
+Per-flag F1 Scores:
+  spatial_flag_f1                    : 0.5321
+  hallucination_flag_f1              : 0.4873
+  lighting_flag_f1                   : 0.1229
+  rendering_flag_f1                  : 0.4938
+  physical_violation_flag_f1         : 0.1182
+  motion_inconsistency_flag_f1       : 0.2000
+  object_flicker_flag_f1             : 0.4132
+
+  Macro Avg Flag F1 : 0.3382
+=======================================================
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV2-D03/test_results.json
+Saved: /home/drive3/10k_MobileNet_tsm/MobileNetV2-D03/mos_scatter_plot.png
